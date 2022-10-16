@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  margin-top: px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  height: 5px;
+}
+
+.title {
+  margin-right: auto;
+  font-family: "Press Start 2P";
+  color: black;
+  font-size: 30px;
+}
+.title a {
+  color: black;
+  text-decoration: none;
+}
+.title a:hover {
+  color: forestgreen;
+}
+
+.account-icon {
+  width: 40px;
+  color: white;
+  stroke: white;
+}
+
+.cart-icon {
+  width: 30px;
+}
+
+.search,
+.account-icon,
+.cart-icon {
+  display: inline-block;
+  padding: 0px 20px;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-bar {
+  height: 30px;
+  align-items: center;
+  color: white;
+  background-color: #333333;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Press Start 2P";
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+}
+
+.top-grid {
+  display: grid;
+  /* grid-template-rows: repeat(2, 350px); */
+  grid-template-columns: repeat(2, 550px);
+  gap: 50px;
+  /* border: 2px solid red; */
+  align-items: center;
+  justify-content: center;
+}
+
+.feminized-grid,
+.auto-grid {
+  margin-top: 30px;
+  border: 2px solid black;
+  height: 350px;
+  width: 550px;
+}
+
+.middle-logo {
+  height: 350px;
+
+  /* border: 3px solid green; */
+  background-color: ;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 0px 4px 16px rgba(17, 17, 26, 0.1),
+    0px 8px 24px rgba(17, 17, 26, 0.1), 0px 16px 56px rgba(17, 17, 26, 0.1); */
+}
+
+.weed {
+  width: 450px;
+  height: auto;
+}
+
+/* a {
+  color: white;
+} Globally */
+
+/* Each state */
+
+a:visited {
+  text-decoration: none;
+  /* color: white; */
+}
+a:hover {
+  text-decoration: none;
+  color: blue;
+}
+a:focus {
+  text-decoration: none;
+  color: orange;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+.banner {
+  background-color: rgb(16, 93, 16);
+  position: absolute;
+  margin-bottom: 320px;
+
+  width: 550px;
+  height: 30px;
+}
+
+.feminized-grid,
+.auto-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Press Start 2P";
+  font-size: 18px;
+  font-family: "Roboto Flex";
+  box-shadow: 0px 4px 16px rgba(17, 17, 26, 0.1),
+    0px 8px 24px rgba(17, 17, 26, 0.1), 0px 16px 56px rgba(17, 17, 26, 0.1);
+  border: none;
+  border-radius: 5px 5px 10px 10px;
+}
+
+.buy {
+  font-family: "Roboto Flex";
+  font-size: 20px;
+  width: 300px;
+  height: 60px;
+  border-radius: 25px;
+  background-color: rgb(4, 32, 173);
+  color: white;
+}
+
+.fem-para2 span {
+  display: block;
+  text-align: center;
+}
+
+.panorama {
+  height: 300px;
+  width: 100%;
+  box-shadow: 0px 3px 8px 0px rgb(154, 150, 152);
+}
+
+/* .feminized-grid img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+} */
+
+/* .feminized-grid {
+  background-image: url(./icons/2h-media-BYnHichOGBY-unsplash.jpg);
+} */
