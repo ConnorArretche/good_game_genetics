@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 
 * {
   margin: 0;
@@ -71,21 +72,54 @@
   /* border: 2px solid red; */
   align-items: center;
   justify-content: center;
+  background-color: transparent;
 }
 
 .feminized-grid,
 .auto-grid {
   margin-top: 30px;
-  border: 2px solid black;
+
   height: 350px;
   width: 550px;
+  position: relative;
+  isolation: isolate;
+
+  /* background: url(./icons/2h-media-BYnHichOGBY-unsplash.jpg);
+
+  background-size: cover; */
+}
+
+.feminized-grid::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+
+  opacity: 0.2;
+  background: url(./icons/2h-media-BYnHichOGBY-unsplash.jpg);
+
+  background-size: cover;
+  background-position: center;
+}
+
+.auto-grid::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+
+  opacity: 0.2;
+  background: url(./icons/2h-media-BYnHichOGBY-unsplash.jpg);
+
+  background-size: cover;
+  background-position: center;
 }
 
 .middle-logo {
   height: 350px;
 
   /* border: 3px solid green; */
-  background-color: ;
+
   height: 350px;
   display: flex;
   justify-content: center;
@@ -123,14 +157,14 @@ a:active {
   color: black;
 }
 
-.banner {
+/* .banner {
   background-color: rgb(16, 93, 16);
   position: absolute;
   margin-bottom: 320px;
 
   width: 550px;
   height: 30px;
-}
+} */
 
 .feminized-grid,
 .auto-grid {
@@ -146,6 +180,9 @@ a:active {
     0px 8px 24px rgba(17, 17, 26, 0.1), 0px 16px 56px rgba(17, 17, 26, 0.1);
   border: none;
   border-radius: 5px 5px 10px 10px;
+  margin-top: 30px;
+  height: 350px;
+  width: 550px;
 }
 
 .buy {
@@ -153,9 +190,18 @@ a:active {
   font-size: 20px;
   width: 300px;
   height: 60px;
-  border-radius: 25px;
+  border-radius: 12px;
   background-color: rgb(4, 32, 173);
   color: white;
+}
+
+.buy:hover {
+  background-color: red;
+}
+
+.fem-seeds {
+  font-size: 30px;
+  font-weight: bolder;
 }
 
 .fem-para2 span {
@@ -171,11 +217,21 @@ a:active {
 
 /* .feminized-grid img {
   width: 100%;
-  max-height: 100%;
+  max-height: 200px;
   object-fit: cover;
   opacity: 0.3;
+  background-color: transparent;
+} */
+/* 
+.feminized-grid {
+  background-image: url(./icons/2h-media-BYnHichOGBY-unsplash.jpg);
+  background-color: transparent;
 } */
 
-/* .feminized-grid {
-  background-image: url(./icons/2h-media-BYnHichOGBY-unsplash.jpg);
+/* .background-fem img {
+  border: 3px solid red;
 } */
+p {
+  font-family: "Permanent Marker";
+  font-size: 25px;
+}
